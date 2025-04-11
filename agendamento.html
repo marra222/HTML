@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <title>Agendamento - OdontoVida</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<header>
+    <h1>Clínica OdontoVida</h1>
+    <p>Agende sua consulta com facilidade</p>
+    <nav>
+        <a href="index.html">Home</a>
+        <a href="agendamento.html">Agendamento</a>
+    </nav>
+</header>
+
+<div class="container">
+    <h2>Formulário de Agendamento</h2>
+    <form action="#" method="post">
+        <label for="nome">Nome completo:</label>
+        <input type="text" id="nome" name="nome" required>
+
+        <label for="email">E-mail:</label>
+        <input type="email" id="email" name="email" required>
+
+        <label for="telefone">Telefone:</label>
+        <input type="tel" id="telefone" name="telefone" required>
+
+        <label for="especialidade">Especialidade:</label>
+        <select id="especialidade" name="especialidade" required>
+            <option value="">Selecione</option>
+            <option value="clinico">Clínico Geral</option>
+            <option value="ortodontia">Ortodontia</option>
+            <option value="endodontia">Endodontia</option>
+            <option value="implantodontia">Implantodontia</option>
+            <option value="estetica">Estética Dental</option>
+        </select>
+
+        <label for="data">Data desejada:</label>
+        <input type="date" id="data" name="data" required>
+
+        <label for="mensagem">Observações:</label>
+        <textarea id="mensagem" name="mensagem" rows="4" placeholder="Ex: dor de dente, primeira consulta, etc."></textarea>
+
+        <button type="submit">Agendar</button>
+    </form>
+</div>
+
+<footer>
+    <p>&copy; 2025 Clínica OdontoVida. Todos os direitos reservados.</p>
+</footer>
+
+</body>
+</html>
